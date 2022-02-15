@@ -1,0 +1,48 @@
+
+.exit_btn{
+    -fx-background-color:  #303132;
+}
+.exit_btn:hover{
+    -fx-background-color: #E81123;
+}
+
+
+
+.min_btn{
+    -fx-background-color:  #303132;
+}
+.min_btn:hover{
+    -fx-background-color: #dddfff;
+}
+
+
+.back_btn{
+    -fx-background-color:  #303132;
+}
+.back_btn:hover{
+    -fx-background-color:  #009c29;
+}
+
+
+.btn{
+    -fx-background-color: #2e2e2e;
+}
+
+.btn:hover{
+    -fx-background-color: #858181;
+}
+
+.left_pane{
+    
+    -fx-background-color: #7a0000;
+}
+
+.bg{
+    -fx-background-color: #000000;
+}
+
+.jfx-date-picker .text-field{
+-jfx-unfocus-color: linear-gradient(#ff0000, #f6ff00);
+-fx-prompt-text-fill: WHITE;
+-fx-text-fill: WHITE;
+}

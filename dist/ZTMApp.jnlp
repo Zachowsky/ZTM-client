@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ZTMApp.jnlp">
+    <information>
+        <title>ZTMApp</title>
+        <vendor/>
+        <description>null</description>
+        <offline-allowed/>
+    </information>
+    <update check="always"/>
+    <resources>
+        <j2se version="9.0.4+" href="http://java.sun.com/products/autodl/j2se"/>
+        <jar href="JavaFXApplication1.jar" size="293798" download="eager"/>
+        <jar href="lib\aopalliance-1.0.jar" size="4467" download="eager"/>
+        <jar href="lib\charm-glisten-5.0.2.jar" size="1134851" download="eager"/>
+        <jar href="lib\commons-logging-1.2.jar" size="61829" download="eager"/>
+        <jar href="lib\fontawesomefx-8.1.jar" size="179086" download="eager"/>
+        <jar href="lib\jfoenix-9.0.9.jar" size="2414624" download="eager"/>
+        <jar href="lib\mysql-connector-java-5.1.49-bin.jar" size="1006906" download="eager"/>
+        <jar href="lib\spring-aop-5.2.3.RELEASE.jar" size="372716" download="eager"/>
+        <jar href="lib\spring-aspects-5.2.3.RELEASE.jar" size="47266" download="eager"/>
+        <jar href="lib\spring-beans-5.2.3.RELEASE.jar" size="684706" download="eager"/>
+        <jar href="lib\spring-context-5.2.3.RELEASE.jar" size="1221408" download="eager"/>
+        <jar href="lib\spring-context-support-5.2.3.RELEASE.jar" size="182130" download="eager"/>
+        <jar href="lib\spring-core-5.2.3.RELEASE.jar" size="1434206" download="eager"/>
+        <jar href="lib\spring-expression-5.2.3.RELEASE.jar" size="282010" download="eager"/>
+        <jar href="lib\spring-instrument-5.2.3.RELEASE.jar" size="7366" download="eager"/>
+        <jar href="lib\spring-jdbc-5.2.3.RELEASE.jar" size="406693" download="eager"/>
+        <jar href="lib\spring-jms-5.2.3.RELEASE.jar" size="261822" download="eager"/>
+        <jar href="lib\spring-messaging-5.2.3.RELEASE.jar" size="542524" download="eager"/>
+        <jar href="lib\spring-orm-5.2.3.RELEASE.jar" size="200874" download="eager"/>
+        <jar href="lib\spring-oxm-5.2.3.RELEASE.jar" size="63969" download="eager"/>
+        <jar href="lib\spring-test-5.2.3.RELEASE.jar" size="679226" download="eager"/>
+        <jar href="lib\spring-tx-5.2.3.RELEASE.jar" size="314314" download="eager"/>
+        <jar href="lib\spring-web-5.2.3.RELEASE.jar" size="1428664" download="eager"/>
+        <jar href="lib\spring-webmvc-5.2.3.RELEASE.jar" size="946319" download="eager"/>
+    </resources>
+    <jfx:javafx-desc width="800" height="600" main-class="javafxapplication1.ZTM" name="ZTM"/>
+</jnlp>
+

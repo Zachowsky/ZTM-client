@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="640.0" prefWidth="960.0" style="-fx-background-color: #ffffff;" styleClass="bg" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Timetable.TimetableController">
+   <children>
+      <ImageView fitHeight="570.0" fitWidth="961.0" layoutY="70.0">
+         <image>
+            <Image url="@../images/dark-brushed-aluminum---saucepan.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="58.0" layoutY="148.0" mnemonicParsing="false" onMouseClicked="#setLine1" prefHeight="57.0" prefWidth="91.0" styleClass="btn" text="LINE 1" textFill="WHITE">
+         <font>
+            <Font name="Centaur" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="58.0" layoutY="232.0" mnemonicParsing="false" onMouseClicked="#setLine2" prefHeight="57.0" prefWidth="91.0" styleClass="btn" text="LINE 2" textFill="WHITE">
+         <font>
+            <Font name="Centaur" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="58.0" layoutY="312.0" mnemonicParsing="false" onMouseClicked="#setLine3" prefHeight="57.0" prefWidth="91.0" styleClass="btn" text="LINE 3" textFill="WHITE">
+         <font>
+            <Font name="Centaur" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="58.0" layoutY="390.0" mnemonicParsing="false" onMouseClicked="#setLine4" prefHeight="57.0" prefWidth="91.0" styleClass="btn" text="LINE 4" textFill="WHITE">
+         <font>
+            <Font name="Centaur" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <AnchorPane layoutY="30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="961.0" styleClass="left_pane">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="209.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="961.0" text="Timetable" textFill="#bcbcbc" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Agency FB" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <HBox fx:id="parent" alignment="TOP_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="961.0" style="-fx-background-color: #303138;">
+         <children>
+            <Label alignment="TOP_CENTER" contentDisplay="RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#minimize_btn" prefHeight="30.0" prefWidth="30.0" styleClass="min_btn" text="_" textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Label>
+            <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#exit_btn" prefHeight="30.0" prefWidth="30.0" styleClass="exit_btn" text="x" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="MOVE" />
+         </cursor>
+      </HBox>
+      <FontAwesomeIcon fill="WHITE" iconName="HOME" layoutX="10.0" layoutY="25.0" onMouseClicked="#home_btn" selectionEnd="0" size="2em" textAlignment="CENTER">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </FontAwesomeIcon>
+      <JFXTextField fx:id="UserPass" focusColor="RED" layoutX="584.0" layoutY="484.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="214.0" promptText="Username / Email" style="-fx-prompt-text-fill: #ffffff; -fx-text-inner-color: #ffffff;" text="Username" visible="false">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="#fff200" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+      </JFXTextField>
+      <JFXTextField fx:id="IDPass" focusColor="RED" layoutX="585.0" layoutY="524.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="214.0" promptText="Username / Email" style="-fx-prompt-text-fill: #ffffff; -fx-text-inner-color: #ffffff;" text="ID Number" visible="false">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="#fff200" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+      </JFXTextField>
+      <TableView fx:id="timetable" layoutX="283.0" layoutY="137.0" prefHeight="304.0" prefWidth="550.0">
+        <columns>
+          <TableColumn fx:id="bus_stop" prefWidth="158.0" text="BUS STOP NAME" />
+          <TableColumn fx:id="time" prefWidth="159.0" text="TIME" />
+        </columns>
+      </TableView>
+      <Button fx:id="editButton" layoutX="513.0" layoutY="549.0" mnemonicParsing="false" onMouseClicked="#saveEditedLine" prefHeight="57.0" prefWidth="91.0" styleClass="btn" text="SAVE" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Centaur" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <TextField fx:id="addBusStop" layoutX="484.0" layoutY="497.0" visible="false" />
+      <TextField fx:id="addTime" layoutX="484.0" layoutY="460.0" visible="false" />
+      <Button fx:id="addNewButton" layoutX="680.0" layoutY="457.0" mnemonicParsing="false" onMouseClicked="#addRecord" prefHeight="65.0" prefWidth="91.0" styleClass="btn" text="ADD" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Centaur" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Label fx:id="labelTime" layoutX="437.0" layoutY="467.0" text="Time" textFill="WHITE" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelBus" layoutX="415.0" layoutY="504.0" text="Bus stop" textFill="WHITE" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+
+   </children>
+</AnchorPane>

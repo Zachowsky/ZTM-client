@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.mvc.SplashView?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="960.0" style="-fx-background-color: #ffffff;" styleClass="bg" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User_panel.User_panelController">
+   <children>
+      <ImageView fitHeight="560.0" fitWidth="960.0" layoutY="79.0">
+         <image>
+            <Image url="@../images/dark-brushed-aluminum---saucepan.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutY="30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="960.0" styleClass="left_pane">
+         <children>
+            <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="960.0" styleClass="left_pane" text="Passenger panel." textFill="#bcbcbc">
+               <font>
+                  <Font name="Agency FB" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button layoutX="480.0" layoutY="594.0" mnemonicParsing="false" onMouseClicked="#reCharge" prefHeight="36.0" prefWidth="120.0" styleClass="btn" text="Recharge" textFill="WHITE">
+         <font>
+            <Font name="Centaur" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <JFXTextField fx:id="usernamepanelrecharge" focusColor="RED" layoutX="480.0" layoutY="551.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="100.0" promptText="Value" style="-fx-prompt-text-fill: #ffffff; -fx-text-inner-color: #ffffff;">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="#fff200" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+      </JFXTextField>
+      <Label layoutX="584.0" layoutY="554.0" text="ZŁ" textFill="WHITE" />
+      <SplashView layoutX="622.0" layoutY="226.0" />
+      <ImageView fitHeight="560.0" fitWidth="450.0" layoutY="80.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/ekran_startowy.jpg" />
+         </image>
+         <viewport>
+            <Rectangle2D height="640.0" minX="300.0" minY="100.0" width="500.0" />
+         </viewport>
+      </ImageView>
+      <Button layoutX="620.0" layoutY="594.0" mnemonicParsing="false" onMouseClicked="#editAccount" prefHeight="36.0" prefWidth="147.0" styleClass="btn" text="Edit profile" textFill="WHITE">
+         <font>
+            <Font name="Centaur" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="785.0" layoutY="593.0" mnemonicParsing="false" onMouseClicked="#changePassword" prefHeight="36.0" prefWidth="147.0" styleClass="btn" text="Change password" textFill="WHITE">
+         <font>
+            <Font name="Centaur" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <AnchorPane layoutX="450.0" layoutY="422.0" prefHeight="50.0" prefWidth="510.0" style="-fx-background-color: #242424;">
+         <children>
+            <Label alignment="CENTER" layoutY="-3.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="510.0" text="Manage your account." textFill="#bcbcbc">
+               <font>
+                  <Font name="Agency FB" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="450.0" layoutY="80.0" prefHeight="50.0" prefWidth="510.0" style="-fx-background-color: #242424;" />
+      <Text fill="WHITE" layoutX="523.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" textAlignment="RIGHT" wrappingWidth="68.8134765625">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="523.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Surname:" textAlignment="RIGHT" wrappingWidth="68.8134765625">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="523.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID:" textAlignment="RIGHT" wrappingWidth="68.8134765625">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="523.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Card ID:" textAlignment="RIGHT" wrappingWidth="68.8134765625">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="523.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address:" textAlignment="RIGHT" wrappingWidth="68.8134765625">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="523.0" layoutY="356.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-Mail:" textAlignment="RIGHT" wrappingWidth="68.8134765625">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="470.0" layoutY="327.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone number:" textAlignment="RIGHT" wrappingWidth="120.0">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="523.0" layoutY="384.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username:" textAlignment="RIGHT" wrappingWidth="68.8134765625">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="481.0" layoutY="413.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account balance:" textAlignment="RIGHT" wrappingWidth="110.8134765625">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Text>
+      <JFXPasswordField fx:id="usernamepanelnewpass" focusColor="RED" layoutX="779.0" layoutY="516.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="160.0" promptText="New password" style="-fx-prompt-text-fill: #ffffff; -fx-text-inner-color: #ffffff;">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#f8ff00" />
+                  <Stop color="RED" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+      </JFXPasswordField>
+      <JFXPasswordField fx:id="usernamepanelconfnewpass" focusColor="RED" layoutX="779.0" layoutY="550.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="160.0" promptText="Confirm new password" style="-fx-prompt-text-fill: #ffffff; -fx-text-inner-color: #ffffff;">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#f8ff00" />
+                  <Stop color="RED" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+      </JFXPasswordField>
+      <HBox fx:id="parent" alignment="TOP_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="960.0" style="-fx-background-color: #303138;">
+         <children>
+            <Label alignment="TOP_CENTER" contentDisplay="RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#minimize_btn" prefHeight="30.0" prefWidth="30.0" styleClass="min_btn" text="_" textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Label>
+            <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#exit_btn" prefHeight="30.0" prefWidth="30.0" styleClass="exit_btn" text="x" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="MOVE" />
+         </cursor>
+      </HBox>
+      <FontAwesomeIcon fill="WHITE" iconName="HOME" layoutX="10.0" layoutY="25.0" onMouseClicked="#home_btn" selectionEnd="0" size="2em" textAlignment="CENTER">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </FontAwesomeIcon>
+      <Label fx:id="userpanelusername" layoutX="739.0" layoutY="331.0" textFill="WHITE" />
+      <Label fx:id="email" layoutX="640.0" layoutY="337.0" prefHeight="24.0" prefWidth="310.0" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font></Label>
+      <Label fx:id="name" layoutX="640.0" layoutY="135.0" prefHeight="24.0" prefWidth="310.0" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="surname" layoutX="640.0" layoutY="162.0" prefHeight="24.0" prefWidth="310.0" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="idd" layoutX="640.0" layoutY="190.0" prefHeight="24.0" prefWidth="310.0" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="cardid" layoutX="640.0" layoutY="220.0" prefHeight="24.0" prefWidth="310.0" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="address" layoutX="640.0" layoutY="248.0" prefHeight="24.0" prefWidth="310.0" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="phone" layoutX="640.0" layoutY="307.0" prefHeight="24.0" prefWidth="310.0" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="username" layoutX="640.0" layoutY="364.0" prefHeight="24.0" prefWidth="310.0" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="dob" layoutX="640.0" layoutY="278.0" prefHeight="24.0" prefWidth="310.0" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="accountbalance" layoutX="640.0" layoutY="393.0" prefHeight="24.0" prefWidth="310.0" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Text fill="WHITE" layoutX="470.0" layoutY="298.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="User ID:" textAlignment="RIGHT" wrappingWidth="120.0">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Text>
+      <Label fx:id="passchanged" alignment="CENTER" contentDisplay="CENTER" layoutX="448.0" layoutY="473.0" prefHeight="20.0" prefWidth="510.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="476.0" layoutY="498.0" prefHeight="18.0" prefWidth="120.0" text="Minimum 10PLN." textFill="WHITE" />
+      <Label alignment="CENTER" layoutX="449.0" layoutY="524.0" prefHeight="18.0" prefWidth="171.0" text="Maximum is 200PLN." textFill="WHITE" />
+   </children>
+</AnchorPane>

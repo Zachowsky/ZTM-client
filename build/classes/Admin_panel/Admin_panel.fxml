@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.mvc.SplashView?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="960.0" style="-fx-background-image: images/dark-brushed-aluminum---saucepan;" styleClass="bg" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.ZTMController">
+   <children>
+      <ImageView fitHeight="560.0" fitWidth="960.0" layoutY="80.0">
+         <image>
+            <Image url="@../images/dark-brushed-aluminum---saucepan.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutY="30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="960.0" styleClass="left_pane">
+         <children>
+            <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="960.0" styleClass="left_pane" text="Admin panel." textFill="#bcbcbc">
+               <font>
+                  <Font name="Agency FB" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <SplashView layoutX="622.0" layoutY="226.0" />
+      <Button layoutX="15.0" layoutY="150.0" mnemonicParsing="false" onMouseClicked="#goToAddLine" prefHeight="36.0" prefWidth="120.0" styleClass="btn" text="Add bus line" textFill="WHITE">
+         <font>
+            <Font name="Centaur" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <AnchorPane layoutY="80.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="430.0" style="-fx-background-color: #242424;">
+         <children>
+            <Label alignment="CENTER" layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="430.0" text="Manage bus lines." textFill="#bcbcbc">
+               <font>
+                  <Font name="Agency FB" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="440.0" layoutY="80.0" prefHeight="50.0" prefWidth="520.0" style="-fx-background-color: #242424;">
+         <children>
+            <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="520.0" text="Selected line: " textFill="#bcbcbc">
+               <font>
+                  <Font name="Agency FB" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <HBox fx:id="parent" alignment="TOP_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="960.0" style="-fx-background-color: #303138;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#minimize_btn" prefHeight="30.0" prefWidth="30.0" styleClass="back_btn" text="&lt;" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Label>
+            <Label alignment="TOP_CENTER" contentDisplay="RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#minimize_btn" prefHeight="30.0" prefWidth="30.0" styleClass="min_btn" text="_" textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Label>
+            <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#exit_btn" prefHeight="30.0" prefWidth="30.0" styleClass="exit_btn" text="x" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="MOVE" />
+         </cursor>
+      </HBox>
+      <FontAwesomeIcon fill="WHITE" iconName="HOME" layoutX="10.0" layoutY="25.0" onMouseClicked="#minimize_btn" selectionEnd="0" size="2em" textAlignment="CENTER">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </FontAwesomeIcon>
+      <AnchorPane layoutX="430.0" layoutY="80.0" prefHeight="560.0" prefWidth="10.0" style="-fx-background-color: #242424;" />
+      <Button layoutX="150.0" layoutY="150.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="120.0" styleClass="btn" text="Edit bus line" textFill="WHITE">
+         <font>
+            <Font name="Centaur" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="285.0" layoutY="150.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="120.0" styleClass="btn" text="Delete bus line" textFill="WHITE">
+         <font>
+            <Font name="Centaur" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <TableView layoutX="440.0" layoutY="130.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.48" prefHeight="510.0" prefWidth="520.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <ChoiceBox layoutX="140.0" layoutY="226.0" prefWidth="150.0" style="-fx-background-color: #999999;" styleClass="btn" />
+      <Button layoutX="15.0" layoutY="320.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="120.0" styleClass="btn" text="Accept" textFill="WHITE">
+         <font>
+            <Font name="Centaur" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="297.0" layoutY="320.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="120.0" styleClass="btn" text="Decline" textFill="WHITE">
+         <font>
+            <Font name="Centaur" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>
